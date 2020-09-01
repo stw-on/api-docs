@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  slate:
+    build:
+      context: .
+    ports:
+      - 4567:4567
+    volumes:
+      - ./build:/srv/slate/build
+      - ./source:/srv/slate/source
