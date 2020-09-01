@@ -1,5 +1,10 @@
 # Einführung
 
+<aside class="warning">
+  Die hier gelisteten APIs sind noch nicht in Betrieb.
+  Wir werden diesen Hinweis bei Inbetriebnahme entfernen.
+</aside>
+
 Auf dieser Seite findest du die aktuellste Dokumentationen zu allen HTTP-APIs, die das Studentenwerk OstNiedersachsen anbietet.
 
 ## Rate-Limiting
