@@ -1,14 +1,12 @@
 //= require ../lib/_jquery
 
 ;(function() {
-  $(document).ready(() => {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  $(document).ready(function() {
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
       const href = anchor.getAttribute('href')
-      
-      console.log('click')
 
       if (/#.+/.test(href)) {
-        anchor.addEventListener('click', event => {
+        anchor.addEventListener('click', function(event) {
           event.preventDefault()
 
           const element = document.querySelector(href)
