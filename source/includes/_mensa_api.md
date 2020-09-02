@@ -47,6 +47,39 @@ curl "https://sls.api.stw-on.de/v1/location"
 `GET https://sls.api.stw-on.de/v1/location`
 
 
+## Eine Mensa
+
+> Beispiel:
+
+```shell
+curl "https://sls.api.stw-on.de/v1/location/101"
+```
+
+```json-doc
+{
+  "id": 101,
+  "name": "Mensa BS TU 1",
+  "address": {
+    "line1": "Mensa 1 TU Braunschweig",
+    "line2": null,
+    "street": "Katharinenstraße 1",
+    "zip": "38106",
+    "city": "Braunschweig"
+  }
+}
+```
+
+### HTTP
+
+`GET https://sls.api.stw-on.de/v1/location/<id>`
+
+### URL Parameter
+
+Parameter | Beschreibung
+----------| -----------------------------------------------------------------
+`id`      | Die ID der Mensa. Siehe [Liste aller Mensen](#liste-aller-mensen)
+
+
 ## Tagesmenü
 
 > Beispiel:
