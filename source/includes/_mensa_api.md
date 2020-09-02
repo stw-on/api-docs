@@ -163,14 +163,14 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26?time=evening"
 
 ### HTTP
 
-`GET https://sls.api.stw-on.de/v1/location/<locationId>/menu/<isoDate>`
+`GET https://sls.api.stw-on.de/v1/location/<id>/menu/<isoDate>`
 
 ### URL Parameter
 
-Parameter    | Beschreibung
------------- | ---------------------------------------
-`locationId` | Die ID der Mensa. Siehe [Liste aller Mensen](#liste-aller-mensen)
-`isoDate`    | Datum nach ISO 8601 (z.B. `2020-06-18`)
+Parameter | Beschreibung
+----------| -----------------------------------------------------------------
+`id`      | Die ID der Mensa. Siehe [Liste aller Mensen](#liste-aller-mensen)
+`isoDate` | Datum nach ISO 8601 (z.B. `2020-06-18`)
 
 ### Query Parameter
 
