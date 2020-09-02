@@ -16,7 +16,7 @@ RUN apt-get update \
     && apt-get remove -y build-essential \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/* \
-    && bundle exec middleman build --clean
+    && bundle exec middleman build --clean --verbose
 
 
 FROM nginx:alpine
