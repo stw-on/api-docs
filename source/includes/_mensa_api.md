@@ -338,6 +338,10 @@ Parameter      | Beschreibung
 `startIsoDate` | Startdatum (von) nach ISO 8601 (z.B. `2020-06-18`)
 `endIsoDate`   | Enddatum (bis) nach ISO 8601 (z.B. `2020-06-18`)
 
+<aside class="info">
+  <b>Hinweis</b>: Start- Enddatum dürfen maximal 21 Tage auseinander liegen.
+</aside>
+
 ### Query Parameter
 
 Parameter         | Beschreibung                                       | Standard
