@@ -25,7 +25,30 @@ curl "https://sls.api.stw-on.de/v1/location"
       "street": "Katharinenstraße 1",
       "zip": "38106",
       "city": "Braunschweig"
-    }
+    },
+    "opening_hours": [
+      {
+        "time": "noon", // 'morning', 'noon' oder 'evening' für jeweils Morgen-, Mittags- und Abendmensa
+        "start_day": 1, // 1 = Montag, 7 = Sonntag
+        "end_day": 5,
+        "start_time": "11:30:00",
+        "end_time": "14:00:00"
+      },
+      {
+        "time": "noon",
+        "start_day": 6,
+        "end_day": 6,
+        "start_time": "11:30:00",
+        "end_time": "14:00:00"
+      },
+      {
+        "time": "evening",
+        "start_day": 1,
+        "end_day": 4,
+        "start_time": "16:30:00",
+        "end_time": "19:45:00"
+      }
+    ]
   },
   {
     "id": 102,
@@ -36,7 +59,8 @@ curl "https://sls.api.stw-on.de/v1/location"
       "street": "Katharinenstraße 1",
       "zip": "38106",
       "city": "Braunschweig"
-    }
+    },
+    "opening_hours": [...]
   },
   // ...
 ]
@@ -65,7 +89,30 @@ curl "https://sls.api.stw-on.de/v1/location/101"
     "street": "Katharinenstraße 1",
     "zip": "38106",
     "city": "Braunschweig"
-  }
+  },
+  "opening_hours": [
+      {
+        "time": "noon", // 'morning', 'noon' oder 'evening' für jeweils Morgen-, Mittags- und Abendmensa
+        "start_day": 1, // 1 = Montag, 7 = Sonntag
+        "end_day": 5,
+        "start_time": "11:30:00",
+        "end_time": "14:00:00"
+      },
+      {
+        "time": "noon",
+        "start_day": 6,
+        "end_day": 6,
+        "start_time": "11:30:00",
+        "end_time": "14:00:00"
+      },
+      {
+        "time": "evening",
+        "start_day": 1,
+        "end_day": 4,
+        "start_time": "16:30:00",
+        "end_time": "19:45:00"
+      }
+    ]
 }
 ```
 
@@ -119,7 +166,8 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26?time=evening"
           "street": "Katharinenstraße 1",
           "zip": "38106",
           "city": "Braunschweig"
-        }
+        },
+        "opening_hours": [...]
       },
       "time": "evening",
       "lane": {
@@ -162,7 +210,8 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26?time=evening"
           "street": "Katharinenstraße 1",
           "zip": "38106",
           "city": "Braunschweig"
-        }
+        },
+        "opening_hours": [...]
       },
       "time": "evening",
       "lane": {
@@ -251,7 +300,8 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26/2018-02-28?time=
           "street": "Katharinenstraße 1",
           "zip": "38106",
           "city": "Braunschweig"
-        }
+        },
+        "opening_hours": [...]
       },
       "time": "evening",
       "lane": {
@@ -294,7 +344,8 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26/2018-02-28?time=
           "street": "Katharinenstraße 1",
           "zip": "38106",
           "city": "Braunschweig"
-        }
+        },
+        "opening_hours": [...]
       },
       "time": "evening",
       "lane": {
