@@ -2,7 +2,7 @@
 title: API | Studentenwerk OstNiedersachsen
 
 toc_footers:
-  - <a href='https://stw-on.de'>© 2020 STW-ON</a>
+  - <a href='https://stw-on.de'>© 2021 STW-ON</a>
   - <a href='https://github.com/stw-on/api-docs'>Auf GitHub ansehen</a>
 
 includes:
