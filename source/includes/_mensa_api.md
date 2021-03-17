@@ -186,11 +186,11 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26?time=evening"
         ],
         "additives": [ // Enthaltene Zusatzstoffe
           
-        ]
-      },
-      "special_tags": [ // Spezialangebote
+        ],
+        "special": [ // Sonderkennzeichnungen
         
-      ]
+        ]
+      }
     },
     {
       "id": 3029,
@@ -233,11 +233,11 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26?time=evening"
         ],
         "additives": [
           
-        ]
-      },
-      "special_tags": [
+        ],
+        "special": [ // Sonderkennzeichnungen
         
-      ]
+        ]
+      }
     }
   ]
 }
@@ -320,11 +320,11 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26/2018-02-28?time=
         ],
         "additives": [ // Enthaltene Zusatzstoffe
           
-        ]
-      },
-      "special_tags": [ // Spezialangebote
+        ],
+        "special": [ // Sonderkennzeichnungen
         
-      ]
+        ]
+      }
     },
     {
       "id": 3029,
@@ -367,11 +367,11 @@ curl "https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26/2018-02-28?time=
         ],
         "additives": [
           
-        ]
-      },
-      "special_tags": [
+        ],
+        "special": [ // Sonderkennzeichnungen
         
-      ]
+        ]
+      }
     }
   ]
 }
