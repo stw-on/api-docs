@@ -325,6 +325,9 @@
                   <li>
                     <a href="#mehrere-tagesmenus" class="toc-h2 toc-link" data-title="Mehrere Tagesmenüs">Mehrere Tagesmenüs</a>
                   </li>
+                  <li>
+                    <a href="#alle-tagesmenus" class="toc-h2 toc-link" data-title="Alle Tagesmenüs">Alle Tagesmenüs</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -409,7 +412,7 @@ eine nächste Anfrage frühestens erfolgen darf.</p>
 <blockquote>
 <p>Beispiel:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sls.api.stw-on.de/v1/location/101"</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sls.api.stw-on.de/v1/locations/101"</span>
 </code></pre></div><div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
   </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensa BS TU 1"</span><span class="p">,</span><span class="w">
@@ -445,7 +448,7 @@ eine nächste Anfrage frühestens erfolgen darf.</p>
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h3 id='http-2'>HTTP</h3>
-<p><code>GET https://sls.api.stw-on.de/v1/location/&lt;id&gt;</code></p>
+<p><code>GET https://sls.api.stw-on.de/v1/locations/&lt;id&gt;</code></p>
 <h3 id='url-parameter'>URL Parameter</h3>
 <table><thead>
 <tr>
@@ -462,7 +465,7 @@ eine nächste Anfrage frühestens erfolgen darf.</p>
 <blockquote>
 <p>Beispiel:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26?time=evening"</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26?time=evening"</span>
 </code></pre></div><div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"announcements"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
@@ -569,7 +572,7 @@ eine nächste Anfrage frühestens erfolgen darf.</p>
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h3 id='http-3'>HTTP</h3>
-<p><code>GET https://sls.api.stw-on.de/v1/location/&lt;id&gt;/menu/&lt;isoDate&gt;</code></p>
+<p><code>GET https://sls.api.stw-on.de/v1/locations/&lt;id&gt;/menu/&lt;isoDate&gt;</code></p>
 <h3 id='url-parameter-2'>URL Parameter</h3>
 <table><thead>
 <tr>
@@ -604,7 +607,7 @@ eine nächste Anfrage frühestens erfolgen darf.</p>
 <blockquote>
 <p>Beispiel:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sls.api.stw-on.de/v1/location/101/menu/2018-02-26/2018-02-28?time=evening"</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26/2018-02-28?time=evening"</span>
 </code></pre></div><div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"announcements"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
@@ -711,7 +714,7 @@ eine nächste Anfrage frühestens erfolgen darf.</p>
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h3 id='http-4'>HTTP</h3>
-<p><code>GET https://sls.api.stw-on.de/v1/location/&lt;id&gt;/menu/&lt;startIsoDate&gt;/&lt;endIsoDate&gt;</code></p>
+<p><code>GET https://sls.api.stw-on.de/v1/locations/&lt;id&gt;/menu/&lt;startIsoDate&gt;/&lt;endIsoDate&gt;</code></p>
 <h3 id='url-parameter-3'>URL Parameter</h3>
 <table><thead>
 <tr>
@@ -750,6 +753,118 @@ eine nächste Anfrage frühestens erfolgen darf.</p>
 <td><code>all</code></td>
 </tr>
 </tbody></table>
+<h2 id='alle-tagesmenus'>Alle Tagesmenüs</h2>
+<blockquote>
+<p>Beispiel:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://sls.api.stw-on.de/v1/meals"</span>
+</code></pre></div><div class="highlight"><pre class="highlight json-doc tab-json-doc"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"announcements"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">775</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-22"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-03-10"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beginn 2. Bauphase – Mensa 1 ab 22. Januar geschlossen"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"closed"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// Gibt an, ob die Mensa in der Zeit geschlossen hat</span><span class="w">
+      </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"meals"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3028</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-26"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Kartoffeln"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Preise in EUR</span><span class="w">
+        </span><span class="nl">"student"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.50"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"employee"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.70"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"guest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.70"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensa BS TU 1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"line1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensa 1 TU Braunschweig"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"line2"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Katharinenstraße 1"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"38106"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Braunschweig"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"opening_hours"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="c1">...</span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"evening"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"lane"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">310</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beilage"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="c1">// Allgemeine Kategorien</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VEGA"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Vegan"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"allergens"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="c1">// Enthaltene Allergene</span><span class="w">
+
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"additives"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="c1">// Enthaltene Zusatzstoffe</span><span class="w">
+
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"special"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="c1">// Sonderkennzeichnungen</span><span class="w">
+
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3029</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-27"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spaghetti"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"student"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.50"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"employee"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.70"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"guest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.70"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensa BS TU 1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"line1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensa 1 TU Braunschweig"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"line2"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Katharinenstraße 1"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"38106"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Braunschweig"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"opening_hours"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="c1">...</span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"evening"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"lane"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">310</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beilage"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VEGA"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Vegan"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"allergens"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GL1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GL namentlich Weizen"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"additives"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"special"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="c1">// Sonderkennzeichnungen</span><span class="w">
+
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-5'>HTTP</h3>
+<p><code>GET https://sls.api.stw-on.de/v1/meals</code></p>
 
       </div>
       <div class="dark-box">
