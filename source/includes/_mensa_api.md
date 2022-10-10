@@ -143,6 +143,7 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26?time=evening"
       "start_date": "2018-01-22",
       "end_date": "2018-03-10",
       "text": "Beginn 2. Bauphase – Mensa 1 ab 22. Januar geschlossen",
+      "text_en": "Mensa 1 is closed from 22. January onwards",
       "closed": true, // Gibt an, ob die Mensa in der Zeit geschlossen hat
       "time": "all"
     }
@@ -152,6 +153,7 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26?time=evening"
       "id": 3028,
       "date": "2018-02-26",
       "name": "Kartoffeln",
+      "name_en": "Potatos",
       "price": { // Preise in EUR
         "student": "0.50",
         "employee": "0.70",
@@ -172,13 +174,15 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26?time=evening"
       "time": "evening",
       "lane": {
         "id": 310,
-        "name": "Beilage"
+        "name": "Beilage",
+        "name_en": "Garnish"
       },
       "tags": {
         "categories": [ // Allgemeine Kategorien
           {
             "id": "VEGA",
-            "name": "Vegan"
+            "name": "Vegan",
+            "name_en": "Vegan"
           }
         ],
         "allergens": [ // Enthaltene Allergene
@@ -196,6 +200,7 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26?time=evening"
       "id": 3029,
       "date": "2018-02-26",
       "name": "Spaghetti",
+      "name_en": "Spaghetti",
       "price": {
         "student": "0.50",
         "employee": "0.70",
@@ -216,19 +221,22 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26?time=evening"
       "time": "evening",
       "lane": {
         "id": 310,
-        "name": "Beilage"
+        "name": "Beilage",
+        "name_en": "Garnish"
       },
       "tags": {
         "categories": [
           {
             "id": "VEGA",
-            "name": "Vegan"
+            "name": "Vegan",
+            "name_en": "Vegan"
           }
         ],
         "allergens": [
           {
             "id": "GL1",
-            "name": "GL namentlich Weizen"
+            "name": "GL namentlich Weizen",
+            "name_en": "GL Wheat"
           }
         ],
         "additives": [
@@ -277,6 +285,7 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26/2018-02-28?time
       "start_date": "2018-01-22",
       "end_date": "2018-03-10",
       "text": "Beginn 2. Bauphase – Mensa 1 ab 22. Januar geschlossen",
+      "text_en": "Mensa 1 is closed from 22. January onwards",
       "closed": true, // Gibt an, ob die Mensa in der Zeit geschlossen hat
       "time": "all"
     }
@@ -286,6 +295,7 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26/2018-02-28?time
       "id": 3028,
       "date": "2018-02-26",
       "name": "Kartoffeln",
+      "name_en": "Potatos",
       "price": { // Preise in EUR
         "student": "0.50",
         "employee": "0.70",
@@ -306,13 +316,15 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26/2018-02-28?time
       "time": "evening",
       "lane": {
         "id": 310,
-        "name": "Beilage"
+        "name": "Beilage",
+        "name_en": "Garnish"
       },
       "tags": {
         "categories": [ // Allgemeine Kategorien
           {
             "id": "VEGA",
-            "name": "Vegan"
+            "name": "Vegan",
+            "name_en": "Vegan"
           }
         ],
         "allergens": [ // Enthaltene Allergene
@@ -330,6 +342,7 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26/2018-02-28?time
       "id": 3029,
       "date": "2018-02-27",
       "name": "Spaghetti",
+      "name_en": "Spaghetti",
       "price": {
         "student": "0.50",
         "employee": "0.70",
@@ -350,19 +363,22 @@ curl "https://sls.api.stw-on.de/v1/locations/101/menu/2018-02-26/2018-02-28?time
       "time": "evening",
       "lane": {
         "id": 310,
-        "name": "Beilage"
+        "name": "Beilage",
+        "name_en": "Garnish"
       },
       "tags": {
         "categories": [
           {
             "id": "VEGA",
-            "name": "Vegan"
+            "name": "Vegan",
+            "name_en": "Vegan"
           }
         ],
         "allergens": [
           {
             "id": "GL1",
-            "name": "GL namentlich Weizen"
+            "name": "GL namentlich Weizen",
+            "name_en": "GL Wheat"
           }
         ],
         "additives": [
@@ -416,6 +432,7 @@ curl "https://sls.api.stw-on.de/v1/meals"
       "start_date": "2018-01-22",
       "end_date": "2018-03-10",
       "text": "Beginn 2. Bauphase – Mensa 1 ab 22. Januar geschlossen",
+      "text_en": "Mensa 1 is closed from 22. January onwards",
       "closed": true, // Gibt an, ob die Mensa in der Zeit geschlossen hat
       "time": "all"
     }
@@ -425,6 +442,7 @@ curl "https://sls.api.stw-on.de/v1/meals"
       "id": 3028,
       "date": "2018-02-26",
       "name": "Kartoffeln",
+      "name_en": "Potatos",
       "price": { // Preise in EUR
         "student": "0.50",
         "employee": "0.70",
@@ -445,13 +463,15 @@ curl "https://sls.api.stw-on.de/v1/meals"
       "time": "evening",
       "lane": {
         "id": 310,
-        "name": "Beilage"
+        "name": "Beilage",
+        "name_en": "Garnish"
       },
       "tags": {
         "categories": [ // Allgemeine Kategorien
           {
             "id": "VEGA",
-            "name": "Vegan"
+            "name": "Vegan",
+            "name_en": "Vegan"
           }
         ],
         "allergens": [ // Enthaltene Allergene
@@ -469,6 +489,7 @@ curl "https://sls.api.stw-on.de/v1/meals"
       "id": 3029,
       "date": "2018-02-27",
       "name": "Spaghetti",
+      "name_en": "Spaghetti",
       "price": {
         "student": "0.50",
         "employee": "0.70",
@@ -489,19 +510,22 @@ curl "https://sls.api.stw-on.de/v1/meals"
       "time": "evening",
       "lane": {
         "id": 310,
-        "name": "Beilage"
+        "name": "Beilage",
+        "name_en": "Garnish"
       },
       "tags": {
         "categories": [
           {
             "id": "VEGA",
+            "name": "Vegan",
             "name": "Vegan"
           }
         ],
         "allergens": [
           {
             "id": "GL1",
-            "name": "GL namentlich Weizen"
+            "name": "GL namentlich Weizen",
+            "name_en": "GL Wheat"
           }
         ],
         "additives": [
